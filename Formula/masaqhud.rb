@@ -1,8 +1,8 @@
 class Masaqhud < Formula
   desc "Lightweight, scriptable desktop HUD for macOS"
   homepage "https://github.com/iflavin/MasaqHUD"
-  url "https://github.com/iflavin/MasaqHUD/archive/refs/tags/v0.5.2.tar.gz"
-  sha256 "42ef08ad69ee985d2cdc7db83d6ea96d928d0ba4a5f2410efc00d6b1ef4fafc0"
+  url "https://github.com/iflavin/MasaqHUD/archive/refs/tags/v0.5.3.tar.gz"
+  sha256 "6c44b66be1486f8c24c5a44a1260949ccd482d2ea98006b9046f842c3997de16"
   license "Apache-2.0"
 
   depends_on :macos
