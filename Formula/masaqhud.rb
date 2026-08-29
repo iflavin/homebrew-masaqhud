@@ -1,11 +1,12 @@
 class Masaqhud < Formula
   desc "Lightweight, scriptable desktop HUD for macOS"
   homepage "https://github.com/iflavin/MasaqHUD"
-  url "https://github.com/iflavin/MasaqHUD/archive/refs/tags/v0.5.6.tar.gz"
-  sha256 "2a6414aae7c3b9c5f74c4114b323f8c79bf7d5e17e96da30b97ee2e8d35f0265"
+  url "https://github.com/iflavin/MasaqHUD/archive/refs/tags/v0.6.0.tar.gz"
+  sha256 "d4712c805306d2637eadfc53312e0017e733476be7341fda3a1c78947ae40605"
   license "Apache-2.0"
 
-  depends_on :macos
+  # MasaqHUD 0.6.0 raised its minimum to macOS 14.0; Package.swift targets .macOS(.v14).
+  depends_on macos: :sonoma
 
   def install
     system "swift", "build", "-c", "release", "--disable-sandbox"
